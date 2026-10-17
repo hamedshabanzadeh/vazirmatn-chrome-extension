@@ -1,0 +1,21 @@
+
+{
+  "manifest_version": 3,
+  "name": "Vazirmatn Everywhere",
+  "version": "1.0.1",
+  "description": "Apply Vazirmatn font to websites",
+  "icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["style.css"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
